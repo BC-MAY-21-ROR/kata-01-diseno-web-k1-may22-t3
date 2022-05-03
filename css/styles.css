@@ -8,6 +8,24 @@
     height: auto;
     text-align: center;
 }
+.card-1{
+    background-color: rgb(172,134,175);
+    border-radius: 15px;
+    margin: 46px;
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card-title{
+    margin-bottom: 20px;
+}
+
 .logo {
     
 }
@@ -23,3 +41,12 @@ button {
 
 }
 
+body{
+    position: relative;
+}
+
+p{
+    font-size: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
