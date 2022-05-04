@@ -10,6 +10,30 @@
   text-align: center;
   width: 90%;
 }
+.first-container nav{
+  margin-bottom: 5vw;
+}
+
+.first-container #logo-i{
+  width: 30vw;
+}
+.welcome-container{
+  
+}
+
+
+.first-container button{
+  margin: auto;
+  padding: auto;
+
+}
+
+
+
+#mockup {
+  width: 298px;
+  height: 208px;
+}
 
 .second-container {
   width: auto;
@@ -20,11 +44,6 @@
   @include card-size;
 }
 
-.card-title {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
 .card-description {
   align-items: center;
   display: flex;
@@ -32,10 +51,6 @@
   text-align: center;
 }
 
-#mockup {
-  width: 298px;
-  height: 208px;
-}
 
 .card-1 {
   border-radius: 15px;
@@ -47,21 +62,9 @@ nav {
   justify-content: space-between;
 }
 
-button {
-  height: 30px;
-  padding: 5px 30px;
-}
-
-body {
-}
-
-p {
-  font-size: 19px;
-  inline-size: 270px;
-  margin: auto;
-  overflow-wrap: break-word;
-}
 
 #grow-together-img {
   width: 380px;
 }
+
+
