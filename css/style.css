@@ -1,21 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-:root {
-  --very-pale-cyan: #ebfbff;
-  --very-dark-cyan: #00252e;
-  --grayish-blue: #808d99;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Poppins;
-}
-
 .first-container {
   height: auto;
   text-align: center;
