@@ -4,23 +4,33 @@
   width: 335px;
   height: 487px;
 }
+
 .first-container > * {
   margin-bottom: 10px;
   margin-top: 20px;
 }
+
 .first-container {
   height: auto;
   text-align: center;
   width: 90%;
 
-}
-.first-container nav{
-  margin-bottom: 5vw;
+  nav {
+    margin-bottom: 5vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    margin: auto;
+    padding: auto;
+  }
+
+  #logo-i {
+    width: 30vw;
+  }
 }
 
-.first-container #logo-i{
-  width: 30vw;
-}
 .Get-Started {
   margin-top: 40px;
   border-radius: 30px;
@@ -30,23 +40,14 @@
   color: white;
 }
 
-.getting-started-button{
-  background-color: hsl(322, 100%, 66%)
+.getting-started-button {
+  background-color: hsl(322, 100%, 66%);
   /*background-color: rgb(245,105,211);*/
 }
 
-.welcome-container{
+.welcome-container {
   /* margin-top;*/
 }
-
-
-.first-container button{
-  margin: auto;
-  padding: auto;
-
-}
-
-
 
 #mockup {
   width: 298px;
@@ -57,53 +58,39 @@
 .second-container {
   width: auto;
   margin-top: 10px;
-  
 }
 
-.card-1 > * {
-  margin-bottom: 10px;
-  margin-top: 20px;
-  background-color: red;
-}
-.card-1 {
-  height: auto;
-  text-align: center;
-  width: 90%;
-
-}
-.card-1 #Grow-together{
-  width: 30vw;
-}
-
-.second-container nav{
-  margin-bottom: 5vw;
-}
 .card {
+  width: 90%;
   box-shadow: 10px 5px 5px black;
+  margin: auto;
+  border-radius: 15px;
   @include card-size;
 }
 
-.card-description {
+.card-img {
+  max-width: 100%;
+}
+
+.card-title {
+  font-size: 25px;
+}
+
+.card-content {
   align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-
-.card-1 {
-  border-radius: 15px;
-  margin: 45px;
+.card-description {
+  color: hsl(208, 11%, 55%);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
+.second-container nav {
+  margin-bottom: 5vw;
 }
-
 
 #grow-together-img {
   width: 380px;
 }
-
-
