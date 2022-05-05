@@ -56,10 +56,6 @@ body {
   /*background-color: rgb(245,105,211);*/
 }
 
-.welcome-container {
-  /* margin-top;*/
-}
-
 #mockup {
   width: 298px;
   height: 208px;
@@ -132,4 +128,12 @@ body {
 .getting-started-container > button {
   margin-top: 20px;
   border-radius: 20px;
+}
+
+footer {
+  background-color: #00252e;
+}
+
+.location {
+  margin-top: 25px;
 }
