@@ -4,6 +4,14 @@
   width: 335px;
   height: 487px;
 }
+@mixin card{
+  width: 90%;
+  box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.17);
+  margin: auto;
+  margin-top: 117px;
+  margin-bottom: 69px;
+  border-radius: 15px;
+}
 
 .first-container > * {
   margin-bottom: 10px;
@@ -62,14 +70,17 @@
 
 .card {
   width: 90%;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.17);
   margin: auto;
+  margin-bottom: 37px;
   border-radius: 15px;
   @include card-size;
+  height: 488px;
 }
 
 .card-img {
   max-width: 100%;
+  padding-bottom: 46px;
 }
 
 .card-title {
@@ -85,6 +96,8 @@
 
 .card-description {
   color: hsl(208, 11%, 55%);
+  font-size: medium;
+  margin-top: 20px;
 }
 
 .second-container nav {
@@ -98,6 +111,7 @@
   width:100%;
   height: 176px;
   text-align: center;
+  @include card();
   padding: 20px 30px;
   // background-color: red;
  & > h2 {
