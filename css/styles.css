@@ -106,3 +106,19 @@ body {
 #grow-together-img {
   width: 380px;
 }
+
+.getting-started-container {
+  width: 100%;
+  height: 176px;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.getting-started-container > h2 {
+  margin-top: 30px;
+}
+
+.getting-started-container > button {
+  margin-top: 20px;
+  border-radius: 20px;
+}
