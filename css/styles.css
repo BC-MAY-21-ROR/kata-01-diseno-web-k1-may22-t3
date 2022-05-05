@@ -169,3 +169,35 @@ footer .info-link > li > a {
 .location {
   margin-top: 25px;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links > div {
+  border: solid 2px white;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links > div:hover {
+  background-color: #f556c3;
+}
+
+.social-links > div > img {
+  width: 14px;
+  height: 18px;
+  filter: invert(100%);
+}
+
+#Copyright {
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
+}
