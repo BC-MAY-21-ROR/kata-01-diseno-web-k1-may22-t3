@@ -1,3 +1,4 @@
+/*
 #mockup {
   width: auto;
   height: auto;
@@ -14,4 +15,11 @@ body {
 
 .hero-container {
   display: grid;
+}
+*/
+.principal {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
 }
