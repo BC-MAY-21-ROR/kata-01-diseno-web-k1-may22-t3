@@ -2,3 +2,16 @@
   width: auto;
   height: auto;
 }
+
+body {
+  position: relative;
+}
+
+#bg-hero-mobile {
+  display: none;
+  position: absolute;
+}
+
+.hero-container {
+  display: grid;
+}
