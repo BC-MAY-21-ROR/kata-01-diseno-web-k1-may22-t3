@@ -16,35 +16,52 @@ body {
   font-family: Poppins;
 }
 
+body {
+  position: relative;
+}
+
+#bg-hero-mobile {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+}
+
 .first-container {
-  height: auto;
+  background-color: #ecfbfe;
+  z-index: 1;
+}
+
+.welcome-container {
+  z-index: 1;
+}
+
+.hero-container {
+  margin: auto;
   text-align: center;
   width: 90%;
-  margin: auto;
-  background-image: url(../images/bg-hero-mobile.svg);
-  background-color: #ecfbfe;
+  z-index: 2;
 }
 
-.first-container nav {
-  margin-bottom: 5vw;
+.hero-container nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-bottom: 5vw;
+  padding-top: 40px;
 }
 
-.first-container #logo-i {
+.hero-container #logo-i {
   width: 30vw;
 }
 
 .Get-Started {
-  box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
-  padding: 14px 57px;
-  border: none;
-  color: white;
-  margin-top: 20px;
-  border-radius: 40px;
-  margin-bottom: 10px;
   background-color: #ff52bf;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 14px 57px;
 }
 
 .Get-Started:hover {
@@ -57,25 +74,29 @@ body {
 }
 
 #mockup {
-  width: 298px;
   height: 208px;
   margin-top: 20px;
+  width: 298px;
 }
 
 .second-container {
-  width: auto;
   margin-top: 10px;
+  width: auto;
 }
 
 .card {
-  width: 90%;
+  border-radius: 15px;
   box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.17);
   margin: auto;
   margin-bottom: 37px;
-  border-radius: 15px;
-  width: 335px;
-  height: 487px;
-  height: 488px;
+  width: 90%;
+}
+
+.card-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .card-img {
@@ -87,17 +108,10 @@ body {
   font-size: 25px;
 }
 
-.card-content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .card-description {
   color: #808d99;
-  font-size: medium;
-  margin-top: 20px;
+  font-size: 15px;
+  margin-top: 14px;
 }
 
 .second-container nav {
@@ -109,19 +123,18 @@ body {
 }
 
 .getting-started-container {
-  position: relative;
-  top: 130px;
   background-color: white;
-  width: 100%;
   height: 176px;
+  padding: 20px 30px;
+  position: relative;
   text-align: center;
-  width: 90%;
+  top: 130px;
+  width: 100%;
+  border-radius: 15px;
   box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.17);
   margin: auto;
-  margin-top: 117px;
   margin-bottom: 69px;
-  border-radius: 15px;
-  padding: 20px 30px;
+  width: 90%;
 }
 
 .getting-started-container > h2 {
@@ -129,24 +142,24 @@ body {
 }
 
 .getting-started-container > button {
-  box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
-  padding: 14px 49px;
   border: none;
+  border-radius: 40px;
+  box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
   color: white;
   margin-top: 20px;
-  border-radius: 40px;
+  padding: 14px 49px;
 }
 
 footer {
-  padding-top: 138px;
   background-color: #00252e;
   color: white;
   padding: 15px;
+  padding-top: 138px;
 }
 
 footer .white-logo {
-  margin-top: 136px;
   margin-bottom: 25px;
+  margin-top: 136px;
 }
 
 footer .info-items {
@@ -154,15 +167,15 @@ footer .info-items {
 }
 
 footer .info-item {
+  align-items: flex-start;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
   margin-bottom: 25px;
 }
 
 footer .info-item img {
-  margin-top: 5px;
   margin-right: 15px;
+  margin-top: 5px;
 }
 
 footer .info-link {
@@ -185,14 +198,14 @@ footer .info-link > li > a {
 }
 
 .social-links > div {
+  align-items: center;
   border: solid 2px white;
   border-radius: 50%;
-  width: 31px;
-  height: 31px;
-  margin-right: 20px;
   display: flex;
+  height: 31px;
   justify-content: center;
-  align-items: center;
+  margin-right: 20px;
+  width: 31px;
 }
 
 .social-links > div:hover {
@@ -200,25 +213,25 @@ footer .info-link > li > a {
 }
 
 .social-links > div > img {
-  width: 14px;
-  height: 18px;
   filter: invert(100%);
+  height: 18px;
+  width: 14px;
 }
 
 #Copyright {
+  font-size: small;
   margin: 0 auto;
+  margin-bottom: 50px;
   margin-top: 25px;
   text-align: center;
-  margin-bottom: 50px;
-  font-size: small;
 }
 
 .Try-it-free {
   background-color: white;
-  padding: 8px 22px;
-  border-radius: 24px;
   border: none;
+  border-radius: 24px;
   box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
+  padding: 8px 22px;
 }
 
 .Try-it-free:hover {
