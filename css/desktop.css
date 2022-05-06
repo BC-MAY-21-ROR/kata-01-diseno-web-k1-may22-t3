@@ -17,9 +17,44 @@ body {
   display: grid;
 }
 */
-.principal {
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+/*
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+    padding-top: 40px;
+  }
+
+  #logo-i {
+    width: 30vw;
+  }*/
+@media (min-width: 1440px) {
+  .hero-container {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    z-index: 2;
+  }
+  .hero-container .containeri {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-container .containeri .welcome-container {
+    text-align: left;
+  }
+  .hero-container .containeri #mockup {
+    width: 684px;
+    height: 485px;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+  }
+  .second-img {
+    background-color: red;
+  }
+  .secondtext {
+    background-color: blue;
+  }
 }
