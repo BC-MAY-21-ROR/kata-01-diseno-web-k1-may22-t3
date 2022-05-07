@@ -1,167 +1,124 @@
 @import 'global';
 
-/*@media (min-width: 375px) { */
-
-@mixin card-size {
-}
-
 @mixin card {
   border-radius: 15px;
   box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.17);
   margin: auto;
-  margin-bottom: 69px;
+  margin-bottom: 70px;
   width: 90%;
 }
 
-body {
-  position: relative;
-}
+header {
+  background-color: $very-pale-cyan;
+  background-image: url('/images/bg-hero-mobile.svg');
 
-#bg-hero-mobile {
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-}
+  .header-content {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    z-index: 1;
 
-#bg-hero-desktop {
-  display: none;
-}
+    nav {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5vw;
+      padding-top: 40px;
+    }
 
-.first-container {
-  background-color: hsl(191, 89%, 96%);
-  z-index: 1;
-}
+    .logo {
+      height: 17px;
+      width: 106px;
+    }
 
-.welcome-container {
-  z-index: 1;
-}
+    .welcome-container > * {
+      margin-bottom: 25px;
+    }
 
-.hero-container {
-  margin: auto;
-  text-align: center;
-  width: 90%;
-  z-index: 2;
+    .welcome-container {
+      h2 {
+        font-size: 28px;
+        margin-top: 80px;
+      }
+    }
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5vw;
-    padding-top: 40px;
+    .mockup-img {
+      margin: auto;
+      margin-top: 30px;
+      max-width: 90%;
+
+      img {
+        max-width: 100%;
+      }
+    }
   }
-
-  #logo-i {
-    width: 30vw;
-  }
-}
-
-.Get-Started {
-  background-color: hsl(322, 100%, 66%);
-  border: none;
-  border-radius: 40px;
-  box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
-  color: white;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  padding: 14px 57px;
-
-  &:hover {
-    background-color: hsl(322, 100%, 80%);
-  }
-}
-
-.getting-started-button {
-  background-color: hsl(322, 100%, 66%);
-
-  /*background-color: rgb(245,105,211);*/
-}
-
-#mockup {
-  height: 208px;
-  margin-top: 20px;
-  width: 298px;
 }
 
 .second-container {
-  margin-top: 10px;
-  width: auto;
-}
+  margin-top: 56px;
 
-.card {
-  border-radius: 15px;
-  box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.17);
-  margin: auto;
-  margin-bottom: 37px;
-  width: 90%;
-  @include card-size;
+  .card {
+    border-radius: 15px;
+    box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.05);
+    margin: auto;
+    margin-bottom: 40px;
+    width: 90%;
 
-  &-content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    &-content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+      width: 80%;
+    }
+
+    &-content > * {
+      margin-bottom: 25px;
+    }
+
+    &-img {
+      max-width: 100%;
+      padding: 50px 0px;
+    }
+
+    &-title {
+      font-size: 28px;
+    }
+
+    &-description {
+      color: $grayish-blue;
+      font-size: 15px;
+    }
   }
-
-  &-img {
-    max-width: 100%;
-    padding-bottom: 46px;
-  }
-
-  &-title {
-    font-size: 25px;
-  }
-
-  &-description {
-    color: hsl(208, 11%, 55%);
-    font-size: 15px;
-    margin-top: 14px;
-  }
-}
-
-.second-container nav {
-  margin-bottom: 5vw;
-}
-
-#grow-together-img {
-  width: 380px;
 }
 
 .getting-started-container {
   background-color: white;
   height: 176px;
-  padding: 20px 30px;
+  padding: 20px 15px;
   position: relative;
   text-align: center;
-  top: 130px;
+  top: 80px;
   width: 100%;
   @include card();
-  // background-color: red;
-  & > h2 {
-    margin-top: 30px;
-  }
 
   & > button {
-    border: none;
-    border-radius: 40px;
-    box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
-    color: white;
+    font-size: 15px;
     margin-top: 20px;
     padding: 14px 49px;
   }
 }
 
 footer {
-  background-color: hsl(192, 100%, 9%);
+  background-color: $very-dark-cyan;
   color: white;
+  margin-top: -60px;
   padding: 15px;
-  padding-top: 138px;
 
   & .white-logo {
     margin-bottom: 25px;
     margin-top: 136px;
-  }
-
-  & .info-items {
-    margin-bottom: 60px;
   }
 
   & .info-item {
@@ -178,54 +135,53 @@ footer {
 
   & .info-link {
     list-style: none;
-    margin-bottom: 60px;
+    margin: 60px 0px;
 
-    & > li > a {
-      color: white;
-      text-decoration: none;
+    & > div > li {
+      margin-bottom: 20px;
+
+      & > a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
-}
 
-.location {
-  margin-top: 25px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-
-  & > div {
-    align-items: center;
-    border: solid 2px white;
-    border-radius: 50%;
+  .social-links {
     display: flex;
-    height: 31px;
     justify-content: center;
-    margin-right: 20px;
-    width: 31px;
 
-    &:hover {
-      background-color: hsl(319, 89%, 65%);
-    }
+    & > div {
+      align-items: center;
+      border: solid 2px white;
+      border-radius: 50%;
+      display: flex;
+      height: 31px;
+      justify-content: center;
+      margin-right: 20px;
+      width: 31px;
 
-    & > img {
-      filter: invert(100%);
-      height: 18px;
-      width: 14px;
+      &:hover {
+        background-color: $pink;
+      }
+
+      & > img {
+        filter: invert(100%);
+        width: 13px;
+      }
     }
+  }
+
+  .copyright {
+    font-size: small;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    text-align: center;
   }
 }
 
-#Copyright {
-  font-size: small;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 25px;
-  text-align: center;
-}
-
-.Try-it-free {
+.try-it-btn {
   background-color: white;
   border: none;
   border-radius: 24px;
@@ -233,7 +189,21 @@ footer {
   padding: 8px 22px;
 
   &:hover {
-    background-color: hsl(322, 100%, 80%);
+    background-color: $light-pink;
   }
 }
-/*}*/
+
+.get-started-btn {
+  background-color: $pink;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 14px 57px;
+
+  &:hover {
+    background-color: $light-pink;
+  }
+}

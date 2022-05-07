@@ -1,99 +1,66 @@
-/*
-#mockup {
-  width: auto;
-  height: auto;
-}
-
-body {
-  position: relative;
-}
-
-#bg-hero-mobile {
-  display: none;
-  position: absolute;
-}
-
-.hero-container {
-  display: grid;
-}
-*/ 
-
-  /*
-  nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5vw;
-    padding-top: 40px;
-  }
-
-  #logo-i {
-    width: 30vw;
-  }*/
-
-
-@media (min-width: 1440px) { 
-
-.hero-container {
-  margin: auto;
-  text-align: center;
-  width: 90%;
-  z-index: 2;
-
-  .containeri{
-    display: flex;
-    flex-direction: row;
-
-    .welcome-container{
+@media (min-width: 1440px) {
+  header {
+    .header-content > div {
+      display: flex;
+      flex-direction: row;
       text-align: left;
+    }
+
+    .hero-container > div {
+      flex: 1;
+    }
+
+    .hero-container .mockup-img {
+      flex: 2;
+
+      img {
+        max-width: 100%;
       }
-    #mockup{
-      width: 684px;
-      height: 485px;
-     }
     }
   }
 
-  .card-content{
-    display: flex;
-    flex-direction: row;
-    background-color: yellow;
-  }
+  .second-container {
+    .card {
+      &-content {
+        direction: rtl;
+        display: grid;
+        gap: 100px;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+      }
+    }
 
-  .second-img {
-    background-color: red;
-  }
-
-  .secondtext{
-    background-color: blue;
-  }
-
-  .Try-it-free{
-    background-color: white;
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 24px;
-    box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.17);
-    padding: 8px 22px;
-  }
-
-  nav .logo {
-    #logo-i{
-      width: 200px;
-      height: 30px;
+    .card-2 .card-content {
+      direction: ltr;
     }
   }
 
-  .getting-started-container{
-    max-width: 798px;
-    height: 278px;
-    h2{
-      font-size: 33px;
+  .getting-started-container {
+    max-width: 700px;
+  }
+
+  footer {
+    .footer-info {
+      align-items: center;
+      display: flex;
+      margin: auto;
+      padding-bottom: 100px;
+      width: 90%;
+
+      & > div,
+      ul {
+        flex: 1;
+      }
+
+      .info-link {
+        display: flex;
+        justify-content: space-around;
+      }
     }
-    button{
-      margin-bottom: 44px;
+
+    .copyright {
+      text-align: right;
     }
   }
-  
 }
-

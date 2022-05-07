@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-:root {
-  --very-pale-cyan: hsl(193, 100%, 96%);
-  --very-dark-cyan: hsl(192, 100%, 9%);
-  --grayish-blue: hsl(208, 11%, 55%);
-}
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(322, 100%, 80%);
+
+$very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
 
 * {
+  box-sizing: border-box;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  box-sizing: border-box;
 }
 
 body {
